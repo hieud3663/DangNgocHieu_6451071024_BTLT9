@@ -26,6 +26,18 @@ class DashboardScreen extends StatelessWidget {
         label: 'Bai 3: DSSV (Firestore)',
         onTap: () => Navigator.pushNamed(context, '/students'),
       ),
+      DashboardItem(
+        icon: Icons.photo_library_outlined,
+        iconColor: Colors.brown,
+        label: 'Bai 4: Chia sẻ ảnh (URL)',
+        onTap: () => Navigator.pushNamed(context, '/images'),
+      ),
+      DashboardItem(
+        icon: Icons.note_alt_outlined,
+        iconColor: Colors.pink,
+        label: 'Bai 5: Ghi chú Offline',
+        onTap: () => Navigator.pushNamed(context, '/notes'),
+      ),
     ];
 
     return Scaffold(

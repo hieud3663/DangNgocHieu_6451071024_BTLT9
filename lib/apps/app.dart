@@ -3,10 +3,15 @@ import 'package:provider/provider.dart';
 import '../view/1/task_list_view.dart';
 import '../view/2/login_view.dart';
 import '../view/3/student_list_view.dart';
+import '../view/4/shared_image_grid_view.dart';
+import '../view/5/note_list_view.dart';
+import '../view/5/note_form_view.dart';
 import '../view/dashboard/dashboard_screen.dart';
 import '../controllers/task_controller.dart';
 import '../controllers/auth_controller.dart';
 import '../controllers/student_controller.dart';
+import '../controllers/image_controller.dart';
+import '../controllers/note_controller.dart';
 
 class MainApp extends StatelessWidget {
   const MainApp({super.key});
@@ -18,6 +23,8 @@ class MainApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => TaskController()),
         ChangeNotifierProvider(create: (_) => AuthController()),
         ChangeNotifierProvider(create: (_) => StudentController()),
+        ChangeNotifierProvider(create: (_) => ImageController()),
+        ChangeNotifierProvider(create: (_) => NoteController()),
       ],
       child: MaterialApp(
         title: 'Dashboard App',
@@ -28,6 +35,9 @@ class MainApp extends StatelessWidget {
           '/tasks': (context) => const TaskListView(),
           '/auth': (context) => const LoginView(),
           '/students': (context) => const StudentListView(),
+          '/images': (context) => const SharedImageGridView(),
+          '/notes': (context) => const NoteListView(),
+          '/note-form': (context) => const NoteFormView(),
         },
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),

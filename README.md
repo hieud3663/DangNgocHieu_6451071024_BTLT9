@@ -16,15 +16,21 @@ lib/
 │   └── app.dart
 ├── controllers/
 │   ├── auth_controller.dart
+│   ├── image_controller.dart
+│   ├── note_controller.dart
 │   ├── student_controller.dart
 │   └── task_controller.dart
 ├── data/
 │   ├── models/
 │   │   ├── dashboard_item.dart
+│   │   ├── note.dart
+│   │   ├── shared_image.dart
 │   │   ├── student.dart
 │   │   └── task.dart
 │   ├── repositories/
 │   │   ├── auth_repository.dart
+│   │   ├── image_repository.dart
+│   │   ├── note_repository.dart
 │   │   ├── student_repository.dart
 │   │   └── task_repository.dart
 │   └── services/
@@ -49,7 +55,17 @@ lib/
 │   │   ├── student_form_view.dart
 │   │   └── student_list_view.dart
 │   ├── 4/
+│   │   ├── image.png
+│   │   ├── image2.png
+│   │   ├── shared_image_form_view.dart
+│   │   └── shared_image_grid_view.dart
 │   ├── 5/
+│   │   ├── image.png
+│   │   ├── image2.png
+│   │   ├── image3.png
+│   │   ├── image4.png
+│   │   ├── note_form_view.dart
+│   │   └── note_list_view.dart
 │   ├── 6/
 │   ├── 7/
 │   ├── 8/
@@ -95,4 +111,23 @@ lib/
 
 ---
 
+### Bài 4: Ứng dụng chia sẻ ảnh (Firebase Storage + Firestore)
+- Ảnh 1
+![Bài 4](lib/view/4/image.png)
+
+- Ảnh 2
+![Bài 4](lib/view/4/image2.png)
+
+### Bài 5: : Ứng dụng ghi chú cá nhân (CRUD + Offline)
+- Ảnh 1
+![Bài 5](lib/view/5/image.png)
+
+- Ảnh 2
+![Bài 5](lib/view/5/image2.png)
+
+- Ảnh 3
+![Bài 5](lib/view/5/image3.png)
+
+- Ảnh 4
+![Bài 5](lib/view/5/image4.png)
 
